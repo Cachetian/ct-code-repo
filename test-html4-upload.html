@@ -1,0 +1,43 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "https://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+<head>
+  <title>Test HTML4 Upload</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script>
+    function myclick(event) {
+      var formData = new FormData();
+      formData.append('file', $('.file')[0].files[0]);
+      $.ajax({
+        url: "/api/upload",
+        type: 'POST',
+        cache: false,
+        dataType: 'json',
+        data: formData,
+        processData: false,
+        contentType: false
+      }).done(function(info) {
+        if (info["result"]) {
+          alert("file upload successful");
+        }
+        alert("file upload fail");
+      }).fail(function(info) {
+        alert("file upload successful");
+      });
+    }
+  </script>
+</head>
+
+<body>
+  <p>Hello world!</p>
+
+  <form action="/api/upload" method="post" enctype="multipart/form-data">
+    <input type="file" name="file" id="file" class="file" />
+    <input type="submit" />
+  </form>
+
+  <button onclick="myclick()">Upload</button>
+
+</body>
+
+</html>
