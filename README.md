@@ -4,3 +4,5 @@ I want my knowledge to be continued from one work to anther, so I create this fo
 2. a flow digram.
 https://modeling-languages.com/javascript-drawing-libraries-diagrams/
 https://stackoverflow.com/questions/22226849/can-i-create-a-flow-chart-no-tree-chart-using-d3-js
+
+MyObject is the foundation.
