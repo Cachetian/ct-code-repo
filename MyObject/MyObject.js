@@ -13,5 +13,5 @@ var MyObjectSchema = {
   code:"char(16)",
   name:"char(64)",
   type:"char(4)",
-  data:"char(512)"
+  data:"char(128)"
 }

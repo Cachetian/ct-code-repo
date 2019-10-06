@@ -1,0 +1,9 @@
+{
+  "ct.MyObject": {
+    "guid": "String",
+    "name": "String",
+    "group": "String",
+    "type": "String",
+    "value": "String"
+  }
+}

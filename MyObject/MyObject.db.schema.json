@@ -1,0 +1,20 @@
+{
+  "ct.myobject.schema": {
+    "remark": "",
+    "entitytypes": {
+      "MyObject": {
+        "guid": "String",
+        "name": "String"
+      }
+    }
+  }
+  "min":{
+    "ct.MyObject": {
+      "guid": "String",
+      "name": "String",
+      "group": "String",
+      "type": "String",
+      "value": "String"
+    }
+  }
+}
