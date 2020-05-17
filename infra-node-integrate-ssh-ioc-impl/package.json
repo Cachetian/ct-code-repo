@@ -1,0 +1,17 @@
+{
+  "name": "infra-node-integrate-ssh-ioc-impl",
+  "version": "1.0.0",
+  "description": "poc demo of nodejs communicate with ssh",
+  "main": "poc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ssh"
+  ],
+  "author": "cachetian",
+  "license": "MIT",
+  "dependencies": {
+    "child_process": "^1.0.2"
+  }
+}
